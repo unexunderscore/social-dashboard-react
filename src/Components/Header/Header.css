@@ -1,0 +1,32 @@
+
+.header-container h1{
+    font-size: 24px;
+
+}
+
+.header-follow{
+    color: hsl(228, 12%, 44%);
+    font-weight: 700;
+    line-height: 2;
+    margin-bottom: 1.2rem;
+}
+
+.header-container hr{
+    border: 0;
+    height: 1px;
+    color:hsl(228, 12%, 44%);
+    background-color: hsl(228, 12%, 44%);
+}
+
+
+.thame-switcher{
+    margin: 1rem 0 5rem 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.thame-switcher div:nth-child(1){
+    font-weight: 700;
+    color:hsl(228, 12%, 44%);
+}
+

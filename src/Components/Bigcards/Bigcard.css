@@ -1,0 +1,37 @@
+.big-cards{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+
+.big-cardlayout{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    min-width: 335px;
+    min-height: 220px;
+    top:13rem;
+    background-color: hsl(227, 47%, 96%);
+    border-radius: 4px;
+    
+}
+
+.facebook-thame{
+    border-top: 4px solid hsl(203, 89%, 53%);
+}
+
+.insta-thame{
+   border-top: 4px solid transparent;
+   border-image-slice: 1;
+   border-image-source: linear-gradient(to right, hsl(37, 97%, 70%), hsl(329, 70%, 58%));
+}
+
+.twitter-thame{
+    border-top: 4px solid hsl(203, 89%, 53%);
+}
+
+.youtube-thame{
+    border-top: 4px solid hsl(348, 97%, 39%);
+    
+}
