@@ -1,10 +1,11 @@
-import React from 'react';
+import {React, useState} from 'react';
 import './Header.css';
-import { Switch } from '@mui/material';
+
 
 
 const Header = () => {
 
+const [ lightOn, setLightOn ] = useState(true);
     
   return (
     <div className='header-container'>
@@ -14,9 +15,18 @@ const Header = () => {
         <div className='thame-switcher'>
             <div>Dark Mode</div>
             <div>
-            
-            <Switch  size='normal' />
-    
+              <div className="switcher-container">
+        
+                <label className="switch">
+                <input type="checkbox" 
+                checked={lightOn}
+                onClick={() => setLightOn(!lightOn)}
+                />
+                <span className="switcher round"></span>
+                </label>
+ 
+              </div>
+
             </div>
         </div>
     </div>

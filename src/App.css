@@ -11,12 +11,11 @@
 
 .main-container{
   color: hsl(230, 17%, 14%);
-  background-color: hsl(225, 100%, 98%);
+  /*background-color: hsl(225, 100%, 98%);*/
   border-bottom-left-radius: 25px;
   border-bottom-right-radius: 25px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   padding: 2rem 1.5rem 1rem 1.5rem;
-  /*margin: 2rem 1.5rem 1rem 1.5rem;*/
 }

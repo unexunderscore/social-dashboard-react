@@ -1,0 +1,69 @@
+
+.overTitle{
+ margin-top: 3rem;
+ margin-bottom: 1rem;
+ color: hsl(228, 12%, 44%);   
+ font-weight: 700;
+ font-size: 24px;
+}
+
+.smallcard-container{
+    display: grid;
+    gap: 15px;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.smallCard {
+    padding: 2rem 2rem 1.5rem 2rem;
+    background-color: hsl(227, 47%, 96%);
+    border-radius: 4px;
+}
+
+.smallCard:hover{
+    cursor: pointer;
+    background-color: hsl(226, 19%, 87%);
+}
+
+.pageViews{
+    display: flex;
+    justify-content: space-between;
+}
+
+.pageViews:nth-child(1){
+    color: hsl(228, 12%, 44%);
+    font-weight: 700;
+}
+
+.percentageCounter{
+    margin-top: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.counterSum{
+    color: hsl(230, 17%, 14%);
+    font-size: 30px;
+    font-weight: 700;  
+      
+}
+
+.percentage-icon{
+    display: flex;
+    align-items: center;
+}
+
+.greenCounter {
+    color: #1eb589;
+}
+
+.redCounter{
+    color: #dc414c;
+}
+
+.arrowIcon{
+   
+    margin-right: 0.5rem;
+    padding-bottom: 0.5rem;
+}
