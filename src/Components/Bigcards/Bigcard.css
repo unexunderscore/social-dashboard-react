@@ -35,3 +35,62 @@
     border-top: 4px solid hsl(348, 97%, 39%);
     
 }
+
+
+.iconName-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.iconName-container div:nth-child(1){
+    margin-right: 0.5rem;
+}
+
+.social-name{
+    
+    color: hsl(228, 12%, 44%);
+    font-weight: 700;
+    font-size: 12px;
+    
+}
+
+.followers-counter{
+    color: hsl(230, 17%, 14%);
+    font-size: 52px;
+    font-weight: 700;
+}
+
+.follow-title{
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-size: 13px;
+    color: hsl(228, 12%, 44%);
+    margin-bottom: 1.5rem;
+}
+
+.iconToday-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.iconToday-container div:nth-child(1){
+    margin-right: 0.2rem;
+    padding: 0 0 0.4rem;
+}
+
+.counterToday{
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.greenCounter {
+    color: #1eb589;
+}
+
+.redCounter{
+    color: #dc414c;
+}
