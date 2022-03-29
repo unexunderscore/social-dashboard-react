@@ -16,11 +16,12 @@
     background-color: var(--card-background);
     border-radius: 4px;
     z-index: 2;
+    
 }
 
 .big-cardlayout:hover{
     cursor: pointer;
-    background-color: hsl(226, 19%, 87%);
+    background-color: var(--hover-bgCards);
 }
 
 .facebook-thame{
@@ -29,14 +30,14 @@
 
 .insta-thame{
   background-clip: content-box, border-box;
-  background: linear-gradient(hsl(227, 47%, 96%), hsl(227, 47%, 96%)) padding-box,
+  background: linear-gradient(var(--card-background), var(--card-background)) padding-box,
               linear-gradient(to right, hsl(37, 97%, 70%), hsl(329, 70%, 58%)) border-box;
     border-top: 4px solid transparent;
     border-radius: 4px;
 }
 
 .insta-thame:hover{
-    background: linear-gradient(hsl(226, 19%, 87%), hsl(226, 19%, 87%)) padding-box,
+    background: linear-gradient(var(--hover-bgCards), var(--hover-bgCards)) padding-box,
     linear-gradient(to right, hsl(37, 97%, 70%), hsl(329, 70%, 58%)) border-box;
 }
 
@@ -62,15 +63,13 @@
 }
 
 .social-name{
-    
-    color: hsl(228, 12%, 44%);
+    color: var(--dark-blue-text);
     font-weight: 700;
     font-size: 12px;
-    
 }
 
 .followers-counter{
-    color: hsl(230, 17%, 14%);
+    color:  var(--dark-white-text);;
     font-size: 52px;
     font-weight: 700;
 }

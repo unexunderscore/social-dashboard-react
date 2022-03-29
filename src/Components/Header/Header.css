@@ -1,30 +1,3 @@
-:root{
-  --background-bg: hsl(0, 0%, 100%);
-  --background-bgTop: hsl(225, 100%, 98%);
-  --card-background: hsl(24, 50%, 96%);
-  --dark-blue-text:hsl(228, 12%, 44%);
-  --dark-white-text: hsl(230, 17%, 14%);
-}
-
-
-[data-theme='dark'] {
-  --background-bg: hsl(230, 17%, 14%);
-  --background-bgTop: hsl(232, 19%, 15%);
-  --card-background: hsl(228, 28%, 20%);
-  --dark-blue-text:hsl(228, 34%, 66%);
-  --dark-white-text: hsl(0, 0%, 100%);
-
-}
-
-.header-container {
-   background-color: var(--background-bgTop);
-   padding: 2rem 1.5rem 3.5rem 1.5rem;
-    border-bottom-left-radius: 20px;
-    border-bottom-right-radius: 20px;
-    margin-bottom: -6rem;
-}
-
-
 .header-container h1{
     font-size: 24px;
     color: var(--dark-white-text);
@@ -37,12 +10,6 @@
     margin-bottom: 1.2rem;
 }
 
-.header-container hr{
-    border: 0;
-    height: 1px;
-    color:hsl(228, 12%, 44%);
-    background-color: hsl(228, 12%, 44%);
-}
 
 .darkMode {
   color: var(--dark-blue-text);
@@ -132,9 +99,7 @@
       color: hsl(225, 20%, 60%);
   }
 
-  hr{
-    display: block;
-  }
+ 
 
   @media only screen and (min-width: 575px) {
     .header-container h1{
@@ -145,16 +110,7 @@
       display: none;
     }
 
-    .header-container{
-      padding-left: 7%;
-      padding-right: 7%;
-      display: flex;
-      justify-content: space-between;
-      padding: 2rem 1.5rem 10.5rem 1.5rem;
-      border-bottom-left-radius: 20px;
-      border-bottom-right-radius: 20px;
-      margin-bottom: -11rem;
-  }
+
 
   .switch {
     margin-left: 1rem;
@@ -174,9 +130,6 @@
 
     
 
-    .header-container{
-      padding-left:12%;
-      padding-right: 12%;
-  }
+
 
   }

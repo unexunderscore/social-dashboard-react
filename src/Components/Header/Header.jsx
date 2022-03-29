@@ -4,13 +4,13 @@ import './Header.css';
 
 
 const Header = () => {
-
+/*
   const [theme, setTheme] = useState('light');
 
   const switchTheme = () => {
     const newTheme = theme === 'light' ? 'dark' : 'light';
     setTheme(newTheme);
-  }
+  }*/
 /*
   useEffect(() => {
     const theme = JSON.parse(localStorage.getItem('theme'));
@@ -20,13 +20,8 @@ const Header = () => {
 
   }, []);
 */
-  return (
-    <div className='header-container' data-theme={theme}>
-        <div>
-        <h1>Social Media Dashboard</h1>
-        <p className='header-follow'>Total Followers: 23,004</p>
-        <hr />
-        </div>
+
+ /*
         <div className='thame-switcher'>
             <div className='darkMode'>Dark Mode</div>
             <div>
@@ -43,7 +38,15 @@ const Header = () => {
               </div>
 
             </div>
+        </div>*/
+  return (
+    <div className='header-container'>
+        <div>
+        <h1>Social Media Dashboard</h1>
+        <p className='header-follow'>Total Followers: 23,004</p>
+    
         </div>
+       
     </div>
   )
   

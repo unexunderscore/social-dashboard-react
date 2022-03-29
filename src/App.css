@@ -1,6 +1,31 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
-body {
-  background-color: white;
+
+:root{
+  --background-all: hsl(0, 0%, 100%);
+  --background-bgTop: hsl(225, 100%, 98%);
+  --card-background: hsl(227, 47%, 96%);
+  --dark-blue-text:hsl(228, 12%, 44%);
+  --dark-white-text: hsl(230, 17%, 14%);
+  --hover-bgCards: hsl(226, 19%, 87%);
+  --overText: hsl(228, 12%, 44%);
+}
+
+[data-theme='dark'] {
+  --background-all: hsl(230, 17%, 14%);
+  --background-bgTop: hsl(232, 19%, 15%);
+  --card-background: hsl(228, 28%, 20%);
+  --dark-blue-text:hsl(228, 34%, 66%);
+  --dark-white-text: hsl(0, 0%, 100%);
+  --hover-bgCards: hsl(230, 28%, 30%);
+  --overText: hsl(0, 0%, 100%);
+}
+
+
+
+
+.plusBody {
+  height: 100vh;
+  background-color: var(--background-all);
 }
 
 
@@ -14,7 +39,7 @@ body {
 }
 
 .main-container{
-  color: hsl(230, 17%, 14%);
+  color: var(--dark-white-text);
   /*background-color: hsl(225, 100%, 98%);*/
   border-bottom-left-radius: 25px;
   border-bottom-right-radius: 25px;
@@ -24,13 +49,35 @@ body {
   padding: 2rem 1.5rem 1rem 1.5rem;
 }
 
+.headFlex{
+  
+    
+    background-color: var(--background-bgTop);
+    padding: 2rem 1.5rem 3.5rem 1.5rem;
+     border-bottom-left-radius: 20px;
+     border-bottom-right-radius: 20px;
+     margin-bottom: -6rem;
+ 
+}
+
+hr{
+  border: 0;
+  height: 1px;
+  color:hsl(228, 12%, 44%);
+  background-color: hsl(228, 12%, 44%);
+ 
+}
+
 
 @media only screen and (min-width: 575px) {
 
   .main-container{
-    
     padding: 2rem 2rem 1rem 2rem;
-    
+  }
+
+  .headFlex{
+    display: flex;
+    justify-content: space-between;
   }
 
 }
@@ -38,10 +85,10 @@ body {
 @media only screen and (min-width: 675px) {
 
   .main-container{
-    
     padding: 2rem 7% 1rem 7%;
-   
   }
+
+ 
 
 }
 
