@@ -10,6 +10,8 @@ import youtubeIcon from '../../../src/icon-youtube.svg';
 
 
 const Bigcard = () => {
+
+
   return (
     <div className='big-cards'>
         <div className='big-cardlayout facebook-thame'>

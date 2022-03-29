@@ -1,5 +1,23 @@
+:root{
+  --background-bg: hsl(0, 0%, 100%);
+  --background-bgTop: hsl(225, 100%, 98%);
+  --card-background: hsl(24, 50%, 96%);
+  --dark-blue-text:hsl(228, 12%, 44%);
+  --dark-white-text: hsl(230, 17%, 14%);
+}
+
+
+[data-theme='dark'] {
+  --background-bg: hsl(230, 17%, 14%);
+  --background-bgTop: hsl(232, 19%, 15%);
+  --card-background: hsl(228, 28%, 20%);
+  --dark-blue-text:hsl(228, 34%, 66%);
+  --dark-white-text: hsl(0, 0%, 100%);
+
+}
+
 .header-container {
-   background-color: hsl(225, 100%, 98%);
+   background-color: var(--background-bgTop);
    padding: 2rem 1.5rem 3.5rem 1.5rem;
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
@@ -9,11 +27,11 @@
 
 .header-container h1{
     font-size: 24px;
-
+    color: var(--dark-white-text);
 }
 
 .header-follow{
-    color: hsl(228, 12%, 44%);
+    color: var(--dark-blue-text);
     font-weight: 700;
     line-height: 2;
     margin-bottom: 1.2rem;
@@ -26,16 +44,15 @@
     background-color: hsl(228, 12%, 44%);
 }
 
+.darkMode {
+  color: var(--dark-blue-text);
+  font-weight: 700;
+}
 
 .thame-switcher{
     margin: 1rem 0 2rem 0;
     display: flex;
     justify-content: space-between;
-}
-
-.thame-switcher div:nth-child(1){
-    font-weight: 700;
-    color:hsl(228, 12%, 44%);
 }
 
 .switch {
@@ -59,7 +76,7 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: #ccc;
+    background: linear-gradient(to right, hsl(210, 78%, 56%),hsl(146, 68%, 55%));
     -webkit-transition: .4s;
     transition: .4s;
   }
@@ -71,11 +88,18 @@
     width: 16px;
     left: 4px;
     bottom: 4px;
-    background-color: white;
+    background-color: hsl(228, 28%, 20%);
     -webkit-transition: .33s;
     transition: .33s;
   }
   
+ input:checked ~ .switcher{
+    background: #ccc;
+ }
+ input:checked ~ .switcher:before{
+    background-color: white;
+ }
+
   input:hover + .switcher {
     background: linear-gradient(to right, hsl(210, 78%, 56%),hsl(146, 68%, 55%));
   }
@@ -106,4 +130,53 @@
       text-align: center;
       font-size: 12px;
       color: hsl(225, 20%, 60%);
+  }
+
+  hr{
+    display: block;
+  }
+
+  @media only screen and (min-width: 575px) {
+    .header-container h1{
+      font-size: 28px;
+  
+  }
+    hr{
+      display: none;
+    }
+
+    .header-container{
+      padding-left: 7%;
+      padding-right: 7%;
+      display: flex;
+      justify-content: space-between;
+      padding: 2rem 1.5rem 10.5rem 1.5rem;
+      border-bottom-left-radius: 20px;
+      border-bottom-right-radius: 20px;
+      margin-bottom: -11rem;
+  }
+
+  .switch {
+    margin-left: 1rem;
+  }
+
+  }
+    
+ 
+
+  @media only screen and (min-width: 675px) {
+
+    
+
+  }
+
+  @media only screen and (min-width: 1120px) {
+
+    
+
+    .header-container{
+      padding-left:12%;
+      padding-right: 12%;
+  }
+
   }

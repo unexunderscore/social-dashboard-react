@@ -1,4 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+body {
+  background-color: white;
+}
 
 
 *{
@@ -7,6 +10,7 @@
   padding: 0;
   font-family: 'Inter', sans-serif;
   font-size: 14px;
+  
 }
 
 .main-container{
@@ -18,4 +22,35 @@
   flex-direction: column;
   justify-content: center;
   padding: 2rem 1.5rem 1rem 1.5rem;
+}
+
+
+@media only screen and (min-width: 575px) {
+
+  .main-container{
+    
+    padding: 2rem 2rem 1rem 2rem;
+    
+  }
+
+}
+
+@media only screen and (min-width: 675px) {
+
+  .main-container{
+    
+    padding: 2rem 7% 1rem 7%;
+   
+  }
+
+}
+
+@media only screen and (min-width: 1120px) {
+
+  .main-container{
+    
+    padding: 2rem 12% 1rem 12%;
+   
+  }
+
 }

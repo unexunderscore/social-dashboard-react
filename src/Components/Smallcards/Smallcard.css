@@ -28,6 +28,7 @@
 .pageViews{
     display: flex;
     justify-content: space-between;
+    
 }
 
 .pageViews:nth-child(1){
@@ -66,4 +67,34 @@
    
     margin-right: 0.5rem;
     padding-bottom: 0.5rem;
+}
+
+
+@media only screen and (min-width: 475px) {
+
+    .smallcard-container{
+        display: grid;
+        grid-template-columns: auto auto;
+        gap: 25px;
+        align-items: center;
+        margin-bottom: 2rem;
+    }
+
+    .smallCard {
+        min-width: 250px;
+    }
+}
+
+@media only screen and (min-width: 1435px) {
+
+    .smallcard-container{
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+        gap: 30px;
+        align-items: center;
+        margin-bottom: 2rem;
+        
+    }
+
+    
 }
