@@ -98,7 +98,7 @@ const Smallcard = () => {
                 </div>
 
                 <div className='percentageCounter'>
-                    <div className='counterSum'>507</div>
+                    <div className='counterSum'>117</div>
                     <div className='percentage-icon greenCounter'>
                         <div className='arrowIcon'>
                             <img src={arrowUp} alt="arrow up" />
