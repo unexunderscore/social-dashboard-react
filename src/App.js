@@ -14,7 +14,10 @@ function App() {
 
       const saved = localStorage.getItem("checked");
       const initialValue = JSON.parse(saved);
-      return initialValue || true;
+      if(initialValue == null){
+        return true;
+      }
+      return initialValue;
 
   });;
 
@@ -52,7 +55,7 @@ function App() {
               <div className="switcher-container">
         
                 <label className="switch">
-                <input type="checkbox" 
+                <input className='checkBox' type="checkbox" 
                 checked={checked}
                 onChange={(e) => setChecked(e.target.checked)}
                 onClick={switchTheme}
