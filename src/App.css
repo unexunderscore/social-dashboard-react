@@ -23,7 +23,7 @@
 
 
 
-.plusBody {
+.plusBody, html, body {
   height: 100vh;
   background-color: var(--background-all);
 }
@@ -39,25 +39,23 @@
 }
 
 .main-container{
+  position: relative;
   color: var(--dark-white-text);
-  /*background-color: hsl(225, 100%, 98%);*/
-  border-bottom-left-radius: 25px;
-  border-bottom-right-radius: 25px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   padding: 2rem 1.5rem 1rem 1.5rem;
+  background-color: var(--background-all);
 }
 
 .headFlex{
-  
-    
+    position: relative;
     background-color: var(--background-bgTop);
     padding: 2rem 1.5rem 3.5rem 1.5rem;
-     border-bottom-left-radius: 20px;
-     border-bottom-right-radius: 20px;
-     margin-bottom: -6rem;
- 
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    margin-bottom: -6rem;
+    z-index: 1;
 }
 
 hr{
@@ -78,6 +76,8 @@ hr{
   .headFlex{
     display: flex;
     justify-content: space-between;
+    padding: 2rem 1.5rem 8.5rem 1.5rem;
+    margin-bottom: -10rem;
   }
 
 }
@@ -88,16 +88,21 @@ hr{
     padding: 2rem 7% 1rem 7%;
   }
 
- 
+  .headFlex{
+    padding: 2rem 7% 8.5rem 7%;
+    margin-bottom: -10rem;
+  }
 
 }
 
 @media only screen and (min-width: 1120px) {
 
   .main-container{
-    
     padding: 2rem 12% 1rem 12%;
-   
   }
 
+  .headFlex{
+    padding: 2rem 12% 8.5rem 12%;
+    margin-bottom: -10rem;
+  }
 }

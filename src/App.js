@@ -4,17 +4,42 @@ import Bigcard from './Components/Bigcards/Bigcard';
 import Smallcard from './Components/Smallcards/Smallcard';
 import {React, useState, useEffect} from 'react';
 
+
 /* props video https://www.youtube.com/watch?v=UrpNtB61qyo */
 
-function App(props) {
- 
-  const [theme, setTheme] = useState('light');
+function App() {
+
+  const [checked, setChecked] = useState(() => {
+    // getting stored value
+
+      const saved = localStorage.getItem("checked");
+      const initialValue = JSON.parse(saved);
+      return initialValue || true;
+
+  });;
+
+  const [theme, setTheme] = useState(() => {
+    // getting stored value
+    const saved = localStorage.getItem("theme");
+    const initialValue = JSON.parse(saved);
+    return initialValue || "light";
+  });;
+
 
   const switchTheme = () => {
     const newTheme = theme === 'light' ? 'dark' : 'light';
     setTheme(newTheme);
-    props.changeTheme(newTheme);
   }
+
+  useEffect(() => {
+    // storing last used theme
+    localStorage.setItem('theme', JSON.stringify(theme));
+  }, [theme]);
+
+ useEffect(() => {
+    // storing last used switch
+    localStorage.setItem('checked', JSON.stringify(checked));
+  }, [checked]);
 
   return (
     <div className='plusBody' data-theme={theme}>
@@ -28,7 +53,8 @@ function App(props) {
         
                 <label className="switch">
                 <input type="checkbox" 
-                defaultChecked
+                checked={checked}
+                onChange={(e) => setChecked(e.target.checked)}
                 onClick={switchTheme}
                 />
                 <span className="switcher round"></span>
